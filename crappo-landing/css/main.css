@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #0d0d2b;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+header ul {
+  list-style: none;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header .logo-container {
+  display: flex;
+  width: 135px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+header .logo-text {
+  width: 79px;
+  height: 22px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+}
+
+header .nav-container {
+  width: 620px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .nav-container .nav-links {
+  width: 339px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+
+header .nav-container .auth-links {
+  width: 221px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+header .nav-container .auth-links .divider {
+  opacity: 0.3;
+}
+
+header .nav-container .auth-links .register {
+  padding: 12px 30px;
+  background-color: #3671e9;
+  border-radius: 32px;
+}
