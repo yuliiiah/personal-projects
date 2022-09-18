@@ -67,6 +67,7 @@ a {
 .heading-2 {
   font-size: 40px;
   line-height: 150%;
+  margin-top: 24px 0;
 }
 
 .heading-3 {
@@ -86,7 +87,7 @@ a {
 
 .btn {
   display: inline-block;
-  padding: 12px 30px;
+  padding: 16px 30px;
   border: none;
   border-radius: 32px;
   color: var(--color-neutral-white);
@@ -240,14 +241,18 @@ main {
 }
 
 .stats {
-  margin-top: 100px;
-  padding: 100px 0;
+  margin: 100px auto;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .numbers {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 1150px;
+  margin: 50px auto;
 }
 
 .number-container {
@@ -267,4 +272,14 @@ main {
   color: var(--color-accent);
   font-size: 40px;
   border-radius: 50%;
+}
+
+.why {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.why .illustration {
+  margin-right: 30px;
 }
