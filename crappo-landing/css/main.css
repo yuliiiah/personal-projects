@@ -15,12 +15,6 @@
   padding: 0;
 }
 
-body {
-  width: 1200px;
-  margin: 40px auto;
-  background-color: var(--color-primary);
-}
-
 ul {
   list-style: none;
 }
@@ -85,6 +79,23 @@ a {
   color: var(--color-neutral-grey-5);
 }
 
+.text-grey-darker {
+  color: var(--color-neutral-grey-3);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-primary {
+  color: #0d0d2b;
+}
+
+.subtitle-accent {
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
 .btn {
   display: inline-block;
   padding: 16px 30px;
@@ -145,6 +156,9 @@ header {
   align-items: center;
   justify-content: space-between;
   color: var(--color-neutral-white);
+  background-color: var(--color-primary);
+  padding: 0 40px;
+  padding-top: 20px;
 }
 
 header .logo-container {
@@ -209,13 +223,16 @@ header .nav-container .auth-links .divider {
 /* remove eventually */
 main {
   color: var(--color-neutral-white);
+  background: var(--color-primary);
+  width: 100%;
+  padding-top: 40px;
 }
 
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  padding: 0 40px;
 }
 
 .hero .subtitle {
@@ -225,11 +242,11 @@ main {
   border-radius: 32px;
 }
 
-.hero .subtitle .text-subtitle-dark {
+.hero .subtitle .subtitle-dark {
   color: var(--color-neutral-white);
 }
 
-.hero .subtitle .text-subtitle-light {
+.hero .subtitle .subtitle-light {
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -245,6 +262,7 @@ main {
   padding: 50px 0;
   display: flex;
   flex-direction: column;
+  padding: 0 40px;
 }
 
 .numbers {
@@ -281,5 +299,76 @@ main {
 }
 
 .why .illustration {
-  margin-right: 30px;
+  padding-right: 30px;
+}
+
+.calculator {
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    var(--color-primary) 0%,
+    var(--color-primary) 58%,
+    var(--color-tertiary) 58%,
+    var(--color-tertiary) 100%
+  );
+}
+
+.calculator-pane {
+  width: 940px;
+  padding: 64px 0;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+.calculator .calculator-form {
+  background-color: var(--color-tertiary);
+  padding: 49px 48px;
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator .calculator-form .hash-rate {
+  width: 400px;
+  background-color: inherit;
+  color: var(--color-primary);
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.calculator .calculator-form .hash-type {
+  width: 200px;
+  background-color: inherit;
+  color: var(--color-primary);
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.calculator .calculator-form .hash-rate:focus,
+.calculator .calculator-form .hash-type:focus {
+  outline: none;
+}
+
+.calculator .revenue {
+  padding: 52px;
+  border-radius: 0px 0px 16px 16px;
+  background: #ffffff;
+  text-align: left;
+  box-shadow: 0px 40px 100px -95px #391777;
+}
+
+.currencies {
+  padding: 0 40px;
+  background-color: var(--color-tertiary);
+  text-align: center;
 }
