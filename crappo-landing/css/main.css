@@ -31,6 +31,26 @@ a {
   cursor: pointer;
 }
 
+.mg-tb-1 {
+  margin: 12px 0;
+}
+
+.mg-tb-2 {
+  margin: 24px 0;
+}
+
+.mg-lr-1 {
+  margin: 0 11px;
+}
+
+.mg-lr-2 {
+  margin: 0 22px;
+}
+
+.mg-lr-3 {
+  margin: 0 33px;
+}
+
 .heading {
   font-family: 'Rubik';
   font-style: normal;
@@ -62,7 +82,6 @@ a {
   line-height: 28px;
   letter-spacing: 0.01em;
   color: var(--color-neutral-grey-5);
-  margin: 24px 0 32px 0;
 }
 
 .btn {
@@ -218,4 +237,34 @@ main {
   padding: 4px 16px;
   margin-right: 16px;
   border-radius: 32px;
+}
+
+.stats {
+  margin-top: 100px;
+  padding: 100px 0;
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number-icon {
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 80px;
+  height: 80px;
+  margin-right: 24px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 40px;
+  border-radius: 50%;
 }
