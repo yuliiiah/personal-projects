@@ -22,8 +22,24 @@ a {
   cursor: pointer;
 }
 
+.top-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  /* border: 5px solid green; */
+}
+
+.content-container {
+  /* border: 5px solid yellow; */
+  padding: 20px 50px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header-wrapper {
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +102,7 @@ a {
 }
 
 .hero-section-wrapper {
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,12 +117,13 @@ a {
   justify-content: space-between;
 }
 
-.hero-container img {
+.hero-img {
   width: 510px;
 }
 
 .stats-section-wrapper {
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
+  padding: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,67 +148,57 @@ a {
   margin: 0;
 }
 
-/*
-
-.mg-tb-1 {
-  margin: 12px 0;
-}
-
-.mg-tb-2 {
-  margin: 24px 0;
-}
-
-.mg-lr-1 {
-  margin: 0 11px;
-}
-
-.mg-lr-2 {
-  margin: 0 22px;
-}
-
-.mg-lr-3 {
-  margin: 0 33px;
-}
-
-
-
-.why {
+.product-descr-wrapper {
+  /* border: 5px solid blue; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  color: var(--color-neutral-white);
+  background-color: var(--color-primary);
 }
 
-.why .illustration {
+.product-descr-img {
+  width: 630px;
   padding-right: 30px;
 }
 
-.calculator {
-  text-align: center;
+.calculator-wrapper {
+  /* border: 5px solid blue; */
+  padding-top: 100px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-neutral-white);
   background: linear-gradient(
     to bottom,
     var(--color-primary) 0%,
-    var(--color-primary) 58%,
-    var(--color-tertiary) 58%,
+    var(--color-primary) 61.65%,
+    var(--color-tertiary) 61.65%,
     var(--color-tertiary) 100%
   );
 }
 
-.calculator-pane {
-  width: 940px;
-  padding: 64px 0;
-  margin: 0 auto;
-  padding-bottom: 70px;
+.calculator-wrapper .content-container {
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.calculator .calculator-form {
+.calculator-pane {
+  width: 940px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.calculator-form {
   background-color: var(--color-tertiary);
-  padding: 49px 48px;
+  padding: 50px;
   border-radius: 16px 16px 0px 0px;
   display: flex;
   justify-content: space-between;
 }
 
-.calculator .calculator-form .hash-rate {
+.hash-rate {
   width: 400px;
   background-color: inherit;
   color: var(--color-primary);
@@ -204,7 +211,11 @@ a {
   line-height: 150%;
 }
 
-.calculator .calculator-form .hash-type {
+.hash-rate::placeholder {
+  color: var(--color-primary);
+}
+
+.hash-type {
   width: 200px;
   background-color: inherit;
   color: var(--color-primary);
@@ -217,42 +228,88 @@ a {
   line-height: 150%;
 }
 
-.calculator .calculator-form .hash-rate:focus,
-.calculator .calculator-form .hash-type:focus {
+.hash-rate:focus,
+.hash-type:focus {
   outline: none;
 }
 
-.calculator .revenue {
-  padding: 52px;
+.calculator-revenue {
+  background: var(--color-neutral-white);
+  padding: 40px;
   border-radius: 0px 0px 16px 16px;
-  background: #ffffff;
   text-align: left;
   box-shadow: 0px 40px 100px -95px #391777;
 }
 
-.currencies {
-  padding: 0 40px;
-  background-color: var(--color-tertiary);
-  text-align: center;
-} */
-
-/* utils start */
-.top-container {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  border: 5px solid green;
+.calculator-revenue .heading-3 {
+  color: var(--color-primary);
 }
 
-.content-container {
-  border: 5px solid yellow;
-  padding: 20px 50px;
-  width: 1200px;
+.calculator-revenue .body-text {
+  margin: 10px 0;
+}
+
+.currencies-wrapper {
+  /* border: 5px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  background-color: var(--color-tertiary);
+}
+
+.currencies-wrapper .content-container {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.currencies-container {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.currency {
+  width: 350px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: var(--color-neutral-white);
+  border-radius: 16px;
+  padding: 40px 24px;
+}
+
+.currency-descr .body-text {
+  margin: 10px 0;
+}
+
+.currency-abbr {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #bdbdbd;
+}
+
+.currency-abbr.light {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.currency.active {
+  background-color: var(--color-secondary);
+  color: var(--color-neutral-white);
+}
+
+/* utils start */
 .btn {
   display: inline-block;
   padding: 16px 30px;
@@ -307,8 +364,16 @@ a {
   margin: 24px 0;
 }
 
+.body-text-center {
+  text-align: center;
+}
+
 .body-text-primary {
-  color: #0d0d2b;
+  color: var(--color-primary);
+}
+
+.body-text-white {
+  color: var(--color-neutral-white);
 }
 
 .body-text-accent {
@@ -343,7 +408,6 @@ a {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
-  color: var(--color-neutral-white);
 }
 
 .heading-1 {
@@ -361,6 +425,10 @@ a {
 .heading-3 {
   font-size: 32px;
   line-height: 150%;
+}
+
+.heading-center {
+  text-align: center;
 }
 
 /* utils end */
@@ -396,6 +464,30 @@ a {
   color: var(--color-accent);
   font-size: 40px;
   border-radius: 50%;
+}
+
+.icon-currency::before {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 45px;
+}
+
+.icon-bitcoin {
+  background: linear-gradient(180deg, #f9aa4b -0.02%, #f7931a 99.99%);
+}
+
+.icon-ethereum {
+  background: #1181e8;
+  color: var(--color-neutral-white);
+}
+
+.icon-litecoin {
+  background: #59c19c;
+  color: var(--color-neutral-white);
 }
 
 /* icons end */
