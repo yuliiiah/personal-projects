@@ -283,6 +283,7 @@ a {
   background-color: var(--color-neutral-white);
   border-radius: 16px;
   padding: 40px 24px;
+  cursor: pointer;
 }
 
 .currency-descr .body-text {
@@ -296,6 +297,7 @@ a {
   font-size: 18px;
   line-height: 150%;
   text-align: center;
+  vertical-align: 3px;
   color: #bdbdbd;
 }
 
@@ -328,11 +330,23 @@ a {
   color: var(--color-primary);
 }
 
-.btn-chevron {
+.btn-text-with-chevron {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px 12px 24px;
+}
+
+.btn-chevron {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--color-neutral-white);
+  border: 2px solid rgba(43, 7, 110, 0.2);
 }
 
 .btn-text-r {
@@ -442,6 +456,11 @@ a {
 }
 
 .icon-chevron-right::before {
+  font-size: 20px;
+  color: var(--color-accent);
+}
+
+.icon-chevron-right-blue-button::before {
   display: inline-flex;
   justify-content: center;
   align-items: center;
