@@ -17,7 +17,7 @@
 }
 
 a {
-  color: var(--color-neutral-white);
+  color: inherit;
   text-decoration: none;
   cursor: pointer;
 }
@@ -89,6 +89,10 @@ a {
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.01em;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid var(--color-accent);
 }
 
 .auth-links {
@@ -397,6 +401,66 @@ a {
   padding-bottom: 7px;
 }
 
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--color-neutral-white);
+  background-color: var(--color-primary);
+}
+
+.footer-wrapper .content-container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-nav-container {
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  flex: 1 1 1 1;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.links-container {
+  margin-top: 25px;
+}
+
+.links .body-text {
+  margin: 5px 0;
+  line-height: 38px;
+  mix-blend-mode: normal;
+  color: var(--color-neutral-grey-5);
+}
+
+.link:hover {
+  color: var(--color-accent);
+}
+
+.payment-methods-container .heading {
+  font-weight: 500;
+}
+
+.payment-methods {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-copyright-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+}
+
 /* utils start */
 .btn {
   display: inline-block;
@@ -527,6 +591,12 @@ a {
   line-height: 150%;
 }
 
+.heading-4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}
+
 .heading-center {
   text-align: center;
 }
@@ -593,6 +663,25 @@ a {
 .icon-litecoin {
   background: #59c19c;
   color: var(--color-neutral-white);
+}
+
+.icon-payment-method {
+  width: 90px;
+  color: var(--color-neutral-grey-5);
+  border-radius: 8px;
+  font-size: 40px;
+  background: rgba(224, 224, 224, 0.05);
+  text-align: center;
+  padding: 12px 0;
+}
+
+.icon-social::before {
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+.icon-social:hover {
+  color: var(--color-accent);
 }
 
 /* icons end */
