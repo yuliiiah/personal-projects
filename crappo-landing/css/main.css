@@ -113,12 +113,29 @@ a {
   align-items: center;
   color: var(--color-neutral-white);
   background-color: var(--color-primary);
+  padding-bottom: 75px;
+  overflow: hidden;
 }
 
 .hero-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+
+.accent-line-2 {
+  position: absolute;
+  width: 90px;
+  height: 800px;
+  top: 140px;
+  left: 780px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04) 34.75%,
+    rgba(255, 255, 255, 0.01) 100%
+  );
+  transform: rotate(-120deg);
 }
 
 .hero-img {
@@ -166,12 +183,28 @@ a {
 
 .stats-section-wrapper {
   /* border: 5px solid blue; */
-  padding: 75px;
+  padding: 75px 75px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-neutral-white);
   background-color: var(--color-primary);
+  position: relative;
+}
+
+.accent-line-1 {
+  position: absolute;
+  width: 90px;
+  height: 800px;
+  top: -470px;
+  left: 510px;
+  background: linear-gradient(
+    180.09deg,
+    rgba(255, 255, 255, 0) 0.49%,
+    rgba(255, 255, 255, 0.04) 39.06%,
+    rgba(255, 255, 255, 0) 99.92%
+  );
+  transform: rotate(-120deg);
 }
 
 .stats {
@@ -198,6 +231,38 @@ a {
   justify-content: center;
   color: var(--color-neutral-white);
   background-color: var(--color-primary);
+  position: relative;
+}
+
+.accent-line-3 {
+  position: absolute;
+  width: 90px;
+  height: 800px;
+  top: -15px;
+  left: 70px;
+  background: linear-gradient(
+    180.09deg,
+    rgba(255, 255, 255, 0) 0.49%,
+    rgba(255, 255, 255, 0.04) 39.06%,
+    rgba(255, 255, 255, 0) 99.92%
+  );
+  transform: rotate(-120deg);
+}
+
+.half-circle-1 {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 1200px;
+  top: -90px;
+}
+
+.u-shape-1 {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 1200px;
+  top: 400px;
 }
 
 .product-descr-img {
@@ -356,6 +421,7 @@ a {
 
 .features-wrapper {
   /* border: 5px solid blue; */
+  position: relative;
   padding-top: 80px;
   display: flex;
   flex-direction: column;
@@ -363,6 +429,39 @@ a {
   justify-content: space-between;
   color: var(--color-neutral-white);
   background-color: var(--color-secondary);
+  overflow: hidden;
+}
+
+.half-circle-2 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 220px;
+  top: -430px;
+
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(255, 255, 255, 0.16) 0deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
+  transform: rotate(90deg);
+  border-radius: 50% 100% 100% 50%;
+}
+
+.quarter-circle {
+  position: absolute;
+  width: 680px;
+  height: 680px;
+  right: -340px;
+  bottom: -340px;
+
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(255, 255, 255, 0.1) 0deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
+  transform: rotate(-120deg);
+  border-radius: 50%;
 }
 
 .features-wrapper .content-container {
@@ -380,6 +479,7 @@ a {
   align-items: center;
   justify-content: space-around;
   margin: 60px 0;
+  z-index: 5;
 }
 
 .feature-descr {
@@ -392,15 +492,46 @@ a {
 
 .subscribe-wrapper {
   /* border: 5px solid blue; */
+  position: relative;
   padding: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-neutral-white);
   background: linear-gradient(180deg, #2b076e 0%, #0d0d2b 100%);
+  overflow: hidden;
+}
+
+.subscribe-accent-line-1 {
+  position: absolute;
+  width: 150px;
+  height: 1000px;
+  left: 400px;
+  bottom: -500px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 40.77%,
+    rgba(255, 255, 255, 0.3) 186.22%
+  );
+  transform: rotate(-45deg);
+}
+
+.subscribe-accent-line-2 {
+  position: absolute;
+  width: 150px;
+  height: 1000px;
+  left: 720px;
+  bottom: -500px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 40.77%,
+    rgba(255, 255, 255, 0.3) 186.22%
+  );
+  transform: rotate(-45deg);
 }
 
 .subscribe-pane {
+  position: relative;
   width: 100%;
   height: 220px;
   display: flex;
@@ -409,6 +540,20 @@ a {
   background-color: var(--color-accent);
   border-radius: 16px;
   padding: 48px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.subscribe-pane-accent-ethereum {
+  position: absolute;
+  left: 50px;
+  top: -25px;
+}
+
+.subscribe-pane-accent-bitcoin {
+  position: absolute;
+  right: 10px;
+  bottom: -8px;
 }
 
 .subscribe-pane .body-text {
