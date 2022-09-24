@@ -26,11 +26,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  /* border: 5px solid green; */
 }
 
 .content-container {
-  /* border: 5px solid yellow; */
   padding: 20px 50px;
   width: 1200px;
   display: flex;
@@ -39,7 +37,6 @@ a {
 }
 
 .header-wrapper {
-  /* border: 5px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,7 +103,6 @@ a {
 }
 
 .hero-section-wrapper {
-  /* border: 5px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -117,11 +113,14 @@ a {
   overflow: hidden;
 }
 
+.hero-section-wrapper .content-container {
+  position: relative;
+}
+
 .hero-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
 .accent-line-2 {
@@ -182,13 +181,15 @@ a {
 }
 
 .stats-section-wrapper {
-  /* border: 5px solid blue; */
   padding: 75px 75px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-neutral-white);
   background-color: var(--color-primary);
+}
+
+.stats-section-wrapper .content-container {
   position: relative;
 }
 
@@ -196,7 +197,7 @@ a {
   position: absolute;
   width: 90px;
   height: 800px;
-  top: -470px;
+  top: -580px;
   left: 510px;
   background: linear-gradient(
     180.09deg,
@@ -225,20 +226,23 @@ a {
 }
 
 .product-descr-wrapper {
-  /* border: 5px solid blue; */
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-neutral-white);
   background-color: var(--color-primary);
+}
+
+.product-descr-wrapper .content-container {
   position: relative;
+  overflow: hidden;
 }
 
 .accent-line-3 {
   position: absolute;
   width: 90px;
   height: 800px;
-  top: -15px;
+  top: -45px;
   left: 70px;
   background: linear-gradient(
     180.09deg,
@@ -253,16 +257,16 @@ a {
   position: absolute;
   width: 200px;
   height: 100px;
-  left: 1200px;
-  top: -90px;
+  left: 1000px;
+  top: -110px;
 }
 
 .u-shape-1 {
   position: absolute;
   width: 240px;
   height: 240px;
-  left: 1200px;
-  top: 400px;
+  left: 1050px;
+  top: 350px;
 }
 
 .product-descr-img {
@@ -271,7 +275,6 @@ a {
 }
 
 .calculator-wrapper {
-  /* border: 5px solid blue; */
   padding-top: 100px;
   padding-bottom: 10px;
   display: flex;
@@ -358,7 +361,6 @@ a {
 }
 
 .currencies-wrapper {
-  /* border: 5px solid blue; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -420,23 +422,29 @@ a {
 }
 
 .features-wrapper {
-  /* border: 5px solid blue; */
-  position: relative;
-  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   color: var(--color-neutral-white);
   background-color: var(--color-secondary);
+  position: relative;
+}
+
+.features-wrapper .content-container {
+  position: relative;
   overflow: hidden;
+}
+
+.features-wrapper .heading-2 {
+  padding-top: 80px;
 }
 
 .half-circle-2 {
   position: absolute;
   width: 600px;
   height: 600px;
-  left: 220px;
+  left: 50px;
   top: -430px;
 
   background: conic-gradient(
@@ -491,8 +499,6 @@ a {
 }
 
 .subscribe-wrapper {
-  /* border: 5px solid blue; */
-  position: relative;
   padding: 80px 0;
   display: flex;
   align-items: center;
@@ -502,11 +508,15 @@ a {
   overflow: hidden;
 }
 
+.subscribe-wrapper .content-container {
+  position: relative;
+}
+
 .subscribe-accent-line-1 {
   position: absolute;
   width: 150px;
   height: 1000px;
-  left: 400px;
+  left: 300px;
   bottom: -500px;
   background: linear-gradient(
     180deg,
@@ -520,7 +530,7 @@ a {
   position: absolute;
   width: 150px;
   height: 1000px;
-  left: 720px;
+  left: 620px;
   bottom: -500px;
   background: linear-gradient(
     180deg,
@@ -548,12 +558,14 @@ a {
   position: absolute;
   left: 50px;
   top: -25px;
+  z-index: -1;
 }
 
 .subscribe-pane-accent-bitcoin {
   position: absolute;
   right: 10px;
   bottom: -8px;
+  z-index: -1;
 }
 
 .subscribe-pane .body-text {
@@ -813,14 +825,17 @@ a {
   border-radius: 50%;
 }
 
+.icon-currency {
+  border-radius: 50%;
+  font-size: 45px;
+}
+
 .icon-currency::before {
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  font-size: 45px;
 }
 
 .icon-bitcoin {
